@@ -1,0 +1,242 @@
+const scene = new THREE.Scene();
+const camera = new THREE.OrthographicCamera();
+const renderer = new THREE.WebGLRenderer();
+
+renderer.setSize(1270,585);
+document.body.appendChild(renderer.domElement);
+camera.position.z = 5;
+
+// Wall
+const Wall1 = new THREE.PlaneGeometry(2,1);
+const Wall2 = new THREE.MeshBasicMaterial();
+const wal = new THREE.Mesh(Wall1,Wall2);
+scene.add(wal);
+wal.position.set(0,0.5,0);
+wal.material.color.set(0x0032FF);
+
+// Window
+const Windowa = new THREE.PlaneGeometry(0.45,0.5);
+const Windowb = new THREE.MeshBasicMaterial();
+const win = new THREE.Mesh(Windowa,Windowb);
+scene.add(win);
+win.position.set(0.5,0.5,0);
+win.material.color.set(0x293089);
+
+const Windowa2 = new THREE.PlaneGeometry(0.4,0.4);
+const Windowb2 = new THREE.MeshBasicMaterial();
+const win2 = new THREE.Mesh(Windowa2,Windowb2);
+scene.add(win2);
+win2.position.set(0.5,0.5,0);
+win2.material.color.set(0x00BDFF);
+
+const Windowa3 = new THREE.PlaneGeometry(0.01,0.4);
+const Windowb3 = new THREE.MeshBasicMaterial();
+const win3 = new THREE.Mesh(Windowa3,Windowb3);
+scene.add(win3);
+win3.position.set(0.5,0.5,0);
+win3.material.color.set(0x00000);
+
+const Windowa4 = new THREE.PlaneGeometry(0.01,0.1);
+const Windowb4 = new THREE.MeshBasicMaterial();
+const win4 = new THREE.Mesh(Windowa4,Windowb4);
+scene.add(win4);
+win4.position.set(0.315,0.6,0);
+win4.material.color.set();
+
+const Windowa5 = new THREE.PlaneGeometry(0.01,0.01);
+const Windowb5 = new THREE.MeshBasicMaterial();
+const win5 = new THREE.Mesh(Windowa5,Windowb5);
+scene.add(win5);
+win5.position.set(0.315,0.5,0);
+win5.material.color.set();
+
+// Window2
+const Windowaa = new THREE.PlaneGeometry(0.5,0.5);
+const Windowbb = new THREE.MeshBasicMaterial();
+const wina = new THREE.Mesh(Windowaa,Windowbb);
+scene.add(wina);
+wina.position.set(-0.7,0.5,0);
+wina.material.color.set(0x293089);
+
+const Windowaa2 = new THREE.PlaneGeometry(0.45,0.4);
+const Windowbb2 = new THREE.MeshBasicMaterial();
+const wina2 = new THREE.Mesh(Windowaa2,Windowbb2);
+scene.add(wina2);
+wina2.position.set(-0.7,0.5,0);
+wina2.material.color.set(0x00BDFF);
+
+const Windowaa3 = new THREE.PlaneGeometry(0.01,0.4);
+const Windowbb3 = new THREE.MeshBasicMaterial();
+const wina3 = new THREE.Mesh(Windowaa3,Windowbb3);
+scene.add(wina3);
+wina3.position.set(-0.7,0.5,0);
+wina3.material.color.set(0x00000);
+
+const Windowaa4 = new THREE.PlaneGeometry(0.01,0.1);
+const Windowbb4 = new THREE.MeshBasicMaterial();
+const wina4 = new THREE.Mesh(Windowaa4,Windowbb4);
+scene.add(wina4);
+wina4.position.set(-0.9,0.6,0);
+wina4.material.color.set();
+
+const Windowaa5 = new THREE.PlaneGeometry(0.01,0.01);
+const Windowbb5 = new THREE.MeshBasicMaterial();
+const wina5 = new THREE.Mesh(Windowaa5,Windowbb5);
+scene.add(wina5);
+wina5.position.set(-0.9,0.5,0);
+wina5.material.color.set();
+
+// Floor
+const Floor1 = new THREE.PlaneGeometry(2,2);
+const Floor2 = new THREE.MeshBasicMaterial();
+const Floor = new THREE.Mesh(Floor1,Floor2);
+scene.add(Floor);
+Floor.position.set(0,-1,0);
+Floor.material.color.set(0xBEBEBE);
+
+// Table
+const T = new THREE.PlaneGeometry(0.4,0.1);
+const X = new THREE.MeshBasicMaterial();
+const brick = new THREE.Mesh(T,X);
+scene.add(brick);
+brick.position.set(0.5,-0.3,0);
+brick.material.color.set(0xC1652E);
+
+const brickgeometry2 = new THREE.PlaneGeometry(0.02,0.5);
+const brickdmaterial2 = new THREE.MeshBasicMaterial();
+const brick2 = new THREE.Mesh(brickgeometry2,brickdmaterial2);
+scene.add(brick2);
+brick2.position.set(0.7,-0.5,0);
+brick2.material.color.set(0xC1652E);
+
+const brickgeometry3 = new THREE.PlaneGeometry(0.02,0.5);
+const brickdmaterial3 = new THREE.MeshBasicMaterial();
+const brick3 = new THREE.Mesh(brickgeometry3,brickdmaterial3);
+scene.add(brick3);
+brick3.position.set(0.3,-0.5,0);
+brick3.material.color.set(0xC1652E);
+
+// Bed
+const Bedgeo = new THREE.PlaneGeometry(0.4,0.1);
+const Bedmat = new THREE.MeshBasicMaterial();
+const Bead = new THREE.Mesh(Bedgeo,Bedmat);
+scene.add(Bead);
+Bead.position.set(-0.7,-0.7,0);
+Bead.material.color.set(0xC1652E);
+
+const bedgeo2 = new THREE.PlaneGeometry(0.02,0.2);
+const bedmat2 = new THREE.MeshBasicMaterial();
+const bead2 = new THREE.Mesh(bedgeo2,bedmat2);
+scene.add(bead2);
+bead2.position.set(-0.51,-0.8,0);
+bead2.material.color.set(0xC1652E);
+
+const bedgeo3 = new THREE.PlaneGeometry(0.02,0.55);
+const bedmat3 = new THREE.MeshBasicMaterial();
+const bead3 = new THREE.Mesh(bedgeo3,bedmat3);
+scene.add(bead3);
+bead3.position.set(-0.89,-0.63,0);
+bead3.material.color.set(0xC1652E);
+ 
+const bedgeo4 = new THREE.PlaneGeometry(0.38,0.1);
+const bedmat4 = new THREE.MeshBasicMaterial();
+const bead4 = new THREE.Mesh(bedgeo4,bedmat4);
+scene.add(bead4);
+bead4.position.set(-0.69,-0.6,0);
+bead4.material.color.set(0x00C5FF);
+
+const bedgeo5 = new THREE.PlaneGeometry(0.1,0.08);
+const bedmat5 = new THREE.MeshBasicMaterial();
+const bead5 = new THREE.Mesh(bedgeo5,bedmat5);
+scene.add(bead5);
+bead5.position.set(-0.83,-0.51,0);
+bead5.material.color.set();
+
+// Chair
+const T1 = new THREE.PlaneGeometry(0.13,0.06);
+const X1 = new THREE.MeshBasicMaterial();
+const brick1 = new THREE.Mesh(T1,X1);
+scene.add(brick1);
+brick1.position.set(0.2,-0.48,0);
+brick1.material.color.set(0xC1652E);
+
+const T2 = new THREE.PlaneGeometry(0.02,0.55);
+const X2 = new THREE.MeshBasicMaterial();
+const b1 = new THREE.Mesh(T2,X2);
+scene.add(b1);
+b1.position.set(0.13,-0.48,0);
+b1.material.color.set(0xC1652E);
+
+const X3 = new THREE.PlaneGeometry(0.02,0.28);
+const T3 = new THREE.MeshBasicMaterial();
+const b2 = new THREE.Mesh(X3,T3);
+scene.add(b2);
+b2.position.set(0.255,-0.61,0);
+b2.material.color.set(0xC1652E);
+
+// Chair2
+const T4 = new THREE.PlaneGeometry(0.13,0.06);
+const X4 = new THREE.MeshBasicMaterial();
+const b3 = new THREE.Mesh(T4,X4);
+scene.add(b3);
+b3.position.set(0.8,-0.48,0);
+b3.material.color.set(0xC1652E);
+
+const T5 = new THREE.PlaneGeometry(0.02,0.55);
+const X5 = new THREE.MeshBasicMaterial();
+const b4 = new THREE.Mesh(T5,X5);
+scene.add(b4);
+b4.position.set(0.856,-0.48,0);
+b4.material.color.set(0xC1652E);
+
+const X6 = new THREE.PlaneGeometry(0.02,0.28);
+const T6 = new THREE.MeshBasicMaterial();
+const b5 = new THREE.Mesh(X6,T6);
+scene.add(b5);
+b5.position.set(0.745,-0.61,0);
+b5.material.color.set(0xC1652E);
+
+// TV
+const T7 = new THREE.PlaneGeometry(0.3,0.4);
+const X7 = new THREE.MeshBasicMaterial();
+const b6 = new THREE.Mesh(T7,X7);
+scene.add(b6);
+b6.position.set(-0.2,0.2,0);
+b6.material.color.set(0x0FF2A);
+
+const T8 = new THREE.PlaneGeometry(0.35,0.05);
+const X8 = new THREE.MeshBasicMaterial();
+const b7 = new THREE.Mesh(T8,X8);
+scene.add(b7);
+b7.position.set(-0.2,-0.02,0);
+b7.material.color.set(0xC1652E);
+
+const T9 = new THREE.PlaneGeometry(0.025,0.3);
+const X9 = new THREE.MeshBasicMaterial();
+const b8 = new THREE.Mesh(T9,X9);
+scene.add(b8);
+b8.position.set(-0.038,-0.15,0);
+b8.material.color.set(0xC1652E);
+
+const T10 = new THREE.PlaneGeometry(0.025,0.3);
+const X10 = new THREE.MeshBasicMaterial();
+const b9 = new THREE.Mesh(T9,X9);
+scene.add(b9);
+b9.position.set(-0.363,-0.15,0);
+b9.material.color.set(0xC1652E);
+
+const T11 = new THREE.PlaneGeometry(0.26,0.3);
+const X11 = new THREE.MeshBasicMaterial();
+const b10 = new THREE.Mesh(T11,X11);
+scene.add(b10);
+b10.position.set(-0.2,0.2,0);
+b10.material.color.set(0x00000);
+ 
+function animate(){
+    requestAnimationFrame(animate);
+
+    renderer.render(scene,camera);
+
+}
+
+animate();
